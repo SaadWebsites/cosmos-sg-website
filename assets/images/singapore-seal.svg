@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sealGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE89E"/>
+      <stop offset="50%" stop-color="#D4A359"/>
+      <stop offset="100%" stop-color="#8F6221"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Cog / Rosette Rim -->
+  <circle cx="100" cy="100" r="92" fill="#0B251E" stroke="url(#sealGold)" stroke-width="4"/>
+  <circle cx="100" cy="100" r="82" fill="none" stroke="url(#sealGold)" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <circle cx="100" cy="100" r="66" fill="#0E382B" stroke="url(#sealGold)" stroke-width="1.5"/>
+
+  <!-- Curved Text Path -->
+  <path id="curveTop" d="M 28,100 A 72,72 0 0,1 172,100" fill="none"/>
+  <path id="curveBottom" d="M 172,100 A 72,72 0 0,1 28,100" fill="none"/>
+
+  <text font-family="'Cinzel', serif" font-size="8.5" font-weight="700" fill="url(#sealGold)" letter-spacing="2">
+    <textPath href="#curveTop" startOffset="50%" text-anchor="middle">
+      COSMOS SG TRADING PTE LTD
+    </textPath>
+  </text>
+
+  <text font-family="'Inter', sans-serif" font-size="7.5" font-weight="600" fill="#9FB3A8" letter-spacing="2">
+    <textPath href="#curveBottom" startOffset="50%" text-anchor="middle">
+      ★ UEN: 202245818G • SINGAPORE ★
+    </textPath>
+  </text>
+
+  <!-- Center Crest: Merlion / Crescent / Cashew Emblem -->
+  <g transform="translate(68, 65)">
+    <!-- Shield -->
+    <path d="M 32,5 C 50,5 60,15 60,35 C 60,52 32,65 32,65 C 32,65 4,52 4,35 C 4,15 14,5 32,5 Z" 
+          fill="#071912" stroke="url(#sealGold)" stroke-width="2"/>
+    
+    <!-- Inner Golden Cashew Icon -->
+    <path d="M 30,18 C 38,16 46,24 44,32 C 43,40 35,45 28,43 C 23,42 20,38 22,33 C 24,28 30,30 33,32 C 36,34 38,33 39,30 C 40,27 37,24 33,23 C 30,22 28,23 27,25 C 25,22 27,19 30,18 Z" 
+          fill="url(#sealGold)"/>
+
+    <!-- Stars -->
+    <circle cx="22" cy="18" r="1.5" fill="#FFF"/>
+    <circle cx="32" cy="13" r="1.5" fill="#FFF"/>
+    <circle cx="42" cy="18" r="1.5" fill="#FFF"/>
+  </g>
+</svg>

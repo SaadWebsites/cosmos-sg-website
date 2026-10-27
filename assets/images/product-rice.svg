@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="riceGrain" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="60%" stop-color="#F2EDE4"/>
+      <stop offset="100%" stop-color="#D9CEC1"/>
+    </linearGradient>
+    <linearGradient id="paddyGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCE082"/>
+      <stop offset="60%" stop-color="#D4A359"/>
+      <stop offset="100%" stop-color="#A67830"/>
+    </linearGradient>
+    <filter id="riceShadow">
+      <feDropShadow dx="2" dy="8" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Shadow -->
+  <ellipse cx="200" cy="270" rx="140" ry="20" fill="#071912" opacity="0.4"/>
+
+  <!-- Golden Stalk / Paddy Sheaf -->
+  <path d="M 120,260 C 140,210 160,140 150,70" fill="none" stroke="#A67830" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 280,260 C 260,200 240,130 250,70" fill="none" stroke="#A67830" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Grains of Premium Rice Cascading -->
+  <g filter="url(#riceShadow)">
+    <!-- Central Basmati Grains (Slender & Long) -->
+    <ellipse cx="200" cy="140" rx="14" ry="46" transform="rotate(25 200 140)" fill="url(#riceGrain)" stroke="#E5DACD" stroke-width="1"/>
+    <ellipse cx="170" cy="180" rx="13" ry="42" transform="rotate(-35 170 180)" fill="url(#riceGrain)" stroke="#E5DACD" stroke-width="1"/>
+    <ellipse cx="230" cy="185" rx="13" ry="44" transform="rotate(40 230 185)" fill="url(#riceGrain)" stroke="#E5DACD" stroke-width="1"/>
+    <ellipse cx="200" cy="220" rx="14" ry="40" transform="rotate(10 200 220)" fill="url(#riceGrain)" stroke="#E5DACD" stroke-width="1"/>
+
+    <!-- Additional background grains -->
+    <ellipse cx="150" cy="115" rx="11" ry="38" transform="rotate(-15 150 115)" fill="url(#paddyGold)"/>
+    <ellipse cx="250" cy="110" rx="11" ry="38" transform="rotate(20 250 110)" fill="url(#paddyGold)"/>
+    <ellipse cx="130" cy="160" rx="10" ry="34" transform="rotate(-48 130 160)" fill="url(#riceGrain)"/>
+    <ellipse cx="270" cy="165" rx="10" ry="34" transform="rotate(52 270 165)" fill="url(#riceGrain)"/>
+  </g>
+
+  <!-- Highlight Sheen on Grain -->
+  <path d="M 194,115 Q 198,140 196,165" stroke="#FFFFFF" stroke-width="2.5" fill="none" opacity="0.8"/>
+  <path d="M 165,160 Q 170,180 168,200" stroke="#FFFFFF" stroke-width="2" fill="none" opacity="0.8"/>
+</svg>

@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COSMOS SG Trading PTE LTD | Global Cashew Experts & Agricultural Commodities</title>
+  <meta name="description" content="COSMOS SG Trading PTE LTD - Singapore premier supplier of premium cashew nuts (W180, W210, W240, W320), raw cashew nuts (RCN), rice, sesame, cocoa and spices. Direct origin sourcing, AFI compliant, global export.">
+  <meta name="keywords" content="COSMOS SG Trading, cashew nuts Singapore, W180 jumbo cashew, W320 cashew, raw cashew nuts Guinea, agricultural commodities trader, B2B cashew export">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+</head>
+<body>
+
+  <!-- ==========================================
+       TOP BAR: MARKET TICKER & SINGAPORE DESK
+       ========================================== -->
+  <aside class="top-ticker-bar">
+    <div class="container top-ticker-inner">
+      <div class="ticker-wrap">
+        <span class="ticker-label">LIVE COMMODITY INDEX</span>
+        <div class="ticker-content">
+          <span class="ticker-item">Cashew W180 Jumbo: <strong>$3.95/lb</strong> <span class="rate-up">&#9650; +1.2%</span></span>
+          <span class="ticker-item">Cashew W320 World Std: <strong>$3.35/lb</strong> <span class="rate-up">&#9650; +0.8%</span></span>
+          <span class="ticker-item">RCN Guinea 50-52 KOR: <strong>$1,280/MT</strong> <span class="rate-up">&#9650; +1.5%</span></span>
+          <span class="ticker-item">1121 Steam Basmati: <strong>$1,140/MT</strong> <span>&#9654; Stable</span></span>
+          <span class="ticker-item">White Sesame 99.9%: <strong>$1,610/MT</strong> <span class="rate-up">&#9650; +0.5%</span></span>
+          <span class="ticker-item">Raw Cocoa Beans: <strong>$3,250/MT</strong> <span class="rate-up">&#9650; +2.1%</span></span>
+          <span class="ticker-item">Zanzibar Cloves FAQ: <strong>$9,400/MT</strong> <span>&#9654; Stable</span></span>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <div class="sg-clock-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span id="sg-live-clock">--:--:-- SGT</span>
+        </div>
+        <div id="sg-desk-status">
+          <span class="status-pulse open"></span> Trading Desk Live
+        </div>
+        <div class="top-phone">
+          <a href="tel:+6563380774" class="text-gold">Tel: +65 63380774</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==========================================
+       MAIN NAVIGATION
+       ========================================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo-link" aria-label="COSMOS SG Homepage">
+        <img src="assets/images/logo.svg" alt="COSMOS SG Trading PTE LTD" class="brand-logo-img">
+      </a>
+
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#products">Commodities &amp; Grades</a></li>
+          <li><a href="#supply-chain">Global Operations</a></li>
+          <li><a href="#packaging">Packaging</a></li>
+          <li><a href="#calculator">FCL Calculator</a></li>
+          <li><a href="#standards">AFI Standards</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-gold-outline btn-request-sample" style="display:none;" id="nav-sample-btn">Request Sample</button>
+        <a href="#quote-form-hero" class="btn btn-primary btn-header-quote">
+          <span>⚡ Get Wholesale Quote</span>
+        </a>
+        <button class="mobile-menu-toggle" aria-label="Toggle Navigation">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       HERO SECTION WITH CASHEW ANIMATION & CONTACT US FORM
+       ========================================== -->
+  <main>
+    <section class="hero-section" id="home">
+      <!-- High-performance Interactive Cashews Canvas Background -->
+      <canvas id="cashew-canvas"></canvas>
+      <div class="hero-backdrop-glow"></div>
+
+      <div class="container hero-grid">
+        <!-- Hero Left Column: Brand Positioning & Interactive Controls -->
+        <div class="hero-content">
+          <div class="hero-origin-badge">
+            <img src="assets/images/singapore-seal.svg" alt="Singapore Seal">
+            <span>Singapore Registered Trader • UEN: 202245818G</span>
+          </div>
+
+          <h1 class="hero-title">
+            Global Cashew Experts &amp;
+            <span class="title-gold">Agricultural Commodity</span>
+            Trading House
+          </h1>
+
+          <p class="hero-subtitle">
+            Direct origin sourcing from West Africa (Guinea, Côte d'Ivoire). Optical Sortex grading to AFI standards in Vietnam &amp; India. Shipped globally with full Singapore quality certification.
+          </p>
+
+          <div class="hero-key-metrics">
+            <div class="metric-pill">
+              <span class="num">&lt; 2 Hrs</span>
+              <span class="lbl">Guaranteed RFQ SLA</span>
+            </div>
+            <div class="metric-pill">
+              <span class="num">500g</span>
+              <span class="lbl">Free Lab Test Samples</span>
+            </div>
+            <div class="metric-pill">
+              <span class="num">100%</span>
+              <span class="lbl">SGS / Cotecna Verified</span>
+            </div>
+          </div>
+
+          <div class="hero-cta-group">
+            <a href="#products" class="btn btn-primary">
+              <span>Explore Cashew Grades</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <button class="btn btn-inspect-3d" id="btn-inspect-cashew">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              <span>Inspect Cashew Anatomy</span>
+            </button>
+          </div>
+
+          <div style="margin-top: 25px; font-size: 0.8rem; color: var(--gold-light); display: flex; align-items: center; gap: 8px;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14h2v2h-2zm0-10h2v8h-2z"/></svg>
+            <span>Tip: Move cursor across the screen to interact with the floating cashews! Click any cashew for grade specs.</span>
+          </div>
+        </div>
+
+        <!-- Hero Right Column: High-Converting Contact Us & RFQ Form -->
+        <div class="hero-rfq-card" id="quote-form-hero">
+          <div class="rfq-header">
+            <span class="rfq-tag">DIRECT TRADING DESK RFQ</span>
+            <h3>Instant Wholesale Quote</h3>
+            <p>Direct factory prices &bull; No broker markups &bull; 2-hour turnaround</p>
+          </div>
+
+          <form id="hero-rfq-form" class="rfq-form-grid" novalidate>
+            <!-- Commodity Selector -->
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="rfq-commodity">Commodity Type *</label>
+                <select id="rfq-commodity" class="form-select" required>
+                  <option value="cashew" selected>Cashew Kernels (Processed)</option>
+                  <option value="cashew">Raw Cashew Nuts (RCN In-Shell)</option>
+                  <option value="rice">Rice (Basmati / Jasmine / Long Grain)</option>
+                  <option value="sesame">Sesame Seeds (Hulled / Natural)</option>
+                  <option value="cocoa">Raw Cocoa Beans (Fermented)</option>
+                  <option value="cloves">Whole Cloves (Lalpari FAQ)</option>
+                  <option value="pepper">Black Pepper (550 - 570 g/l)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="rfq-grade">Grade Specification *</label>
+                <select id="rfq-grade" class="form-select" required>
+                  <!-- Populated dynamically via JS -->
+                  <option value="w180">W-180 Jumbo King (140-180/lb)</option>
+                  <option value="w210">W-210 Large (180-210/lb)</option>
+                  <option value="w240">W-240 Standard Large (220-240/lb)</option>
+                  <option value="w320" selected>W-320 World Standard (300-320/lb)</option>
+                  <option value="w450">W-450 Small Whole (400-450/lb)</option>
+                  <option value="ws">WS White Splits (Halves)</option>
+                  <option value="lp">LP Large White Pieces</option>
+                  <option value="rcn">Raw Cashew Nuts (Guinea Origin)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Volume & Packaging -->
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="rfq-quantity">Target Volume *</label>
+                <div class="input-with-addon">
+                  <input type="number" id="rfq-quantity" class="form-control" value="16" min="1" max="1000" step="any" required>
+                  <select id="rfq-unit" class="form-select">
+                    <option value="MT" selected>MT</option>
+                    <option value="Cartons">Cartons</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="rfq-packaging">Packaging Format *</label>
+                <select id="rfq-packaging" class="form-select" required>
+                  <option value="25kg (50lb) Vacuum Carton" selected>25kg (50lb) Vacuum Carton + N2</option>
+                  <option value="10kg Dual Vacuum Pouches">10kg Dual Vacuum Pouches in Outer Box</option>
+                  <option value="Retail Stand-up Pouches">100g - 1kg Retail Zipper Pouches</option>
+                  <option value="Custom Private Label">Custom Private Label OEM</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Destination Port -->
+            <div class="form-group">
+              <label for="rfq-port">Destination Port / CIF Terms *</label>
+              <input type="text" id="rfq-port" class="form-control" placeholder="e.g. CIF Rotterdam, CIF Hamburg, CIF Hai Phong, CIF Mundra" value="CIF Rotterdam, Netherlands" required>
+            </div>
+
+            <!-- Dynamic Load Estimate Badge -->
+            <div class="load-estimate-box" id="rfq-load-estimate">
+              <strong>Est. Volume:</strong> ~16.0 MT (640 Cartons) &bull; <span class="text-gold">Approx. 1.0 x 20ft FCL Container</span>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="rfq-name">Your Full Name *</label>
+                <input type="text" id="rfq-name" class="form-control" placeholder="e.g. Alexander Vance" required>
+              </div>
+
+              <div class="form-group">
+                <label for="rfq-email">Corporate Work Email *</label>
+                <input type="email" id="rfq-email" class="form-control" placeholder="purchasing@company.com" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="rfq-phone">WhatsApp / Phone with Country Code *</label>
+              <input type="tel" id="rfq-phone" class="form-control" placeholder="+1 (555) 019-2834 or +44 ..." required>
+            </div>
+
+            <button type="submit" class="btn btn-primary rfq-submit-btn">
+              <span>⚡ Request Guaranteed Wholesale Price &amp; Specs</span>
+            </button>
+          </form>
+
+          <div class="rfq-trust-footer">
+            <div class="trust-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+              <span>SGS Origin Tested</span>
+            </div>
+            <div class="trust-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.65z"/></svg>
+              <span>Lab Samples Available</span>
+            </div>
+            <div class="trust-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+              <span>100% Confidential</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CUSTOM SLIDER 1: COMMODITIES & CASHEW GRADES SHOWCASE
+         ========================================== -->
+    <section class="section-padding product-slider-section" id="products">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">PREMIUM COMMODITY PORTFOLIO</span>
+          <h2 class="section-title">Optical Sortex Graded &amp; AFI Certified Commodities</h2>
+          <p class="section-desc">
+            Explore our signature cashew nut varieties and agricultural commodities. Each batch undergoes rigorous cleaning, multi-stage electronic color sorting, and vacuum nitrogen packaging.
+          </p>
+        </div>
+
+        <div id="product-slider">
+          <!-- Filter Tabs & Navigation Controls -->
+          <div class="slider-controls-wrap">
+            <div class="grade-filter-tabs">
+              <button class="grade-filter-tab active" data-filter="all">All Commodities</button>
+              <button class="grade-filter-tab" data-filter="cashew">Cashews (Whole)</button>
+              <button class="grade-filter-tab" data-filter="splits">Splits &amp; Pieces</button>
+              <button class="grade-filter-tab" data-filter="rcn">Raw Cashews (RCN)</button>
+              <button class="grade-filter-tab" data-filter="rice">Rice Varieties</button>
+              <button class="grade-filter-tab" data-filter="sesame">Sesame Seeds</button>
+              <button class="grade-filter-tab" data-filter="cocoa">Cocoa &amp; Spices</button>
+            </div>
+
+            <div class="slider-arrows">
+              <button class="slider-arrow-btn slider-prev" aria-label="Previous Slide">&larr;</button>
+              <button class="slider-arrow-btn slider-next" aria-label="Next Slide">&rarr;</button>
+            </div>
+          </div>
+
+          <!-- Slider Viewport -->
+          <div class="product-slider-viewport">
+            <div class="slider-track">
+              <!-- Slide 1: W-180 Jumbo -->
+              <div class="product-slide active" data-category="cashew">
+                <div class="slide-grid">
+                  <div class="slide-visual-box">
+                    <span class="slide-badge-origin">Origin: Guinea / Vietnam</span>
+                    <img src="assets/images/cashew-jumbo.svg" alt="W180 Jumbo King Cashew">
+                    <span class="slide-grade-tag">KING JUMBO GRADE</span>
+                  </div>
+                  <div class="slide-info-box">
+                    <span class="slide-category-name">Signature Whole Cashew</span>
+                    <h3>W-180 &ldquo;The King of Cashews&rdquo;</h3>
+                    <p class="slide-description">
+                      The undisputed summit of luxury cashew kernels. Sized between 140 to 180 whole kernels per pound (454g). Known for its majestic kidney contour, crunchy buttery profile, and zero scorched defects. Ideal for premium roasting and luxury retail gifting.
+                    </p>
+                    <div class="slide-specs-grid">
+                      <div class="spec-cell">
+                        <span class="lbl">Nut Count / lb</span>
+                        <span class="val highlight">140 – 180 Kernels</span>
+                      </div>
+                      <div class="spec-cell">
+                        <span class="lbl">Moisture Content</span>
+                        <span class="val">&lt; 4.5% (AFI Compliant)</span>
+                      </div>
+                      <div class="spec-cell">
+                        <span class="lbl">Broken Tolerance</span>
+                        <span class="val">&lt; 3.0% Max</span>
+                      </div>
+                      <div class="spec-cell">
+                        <span class="lbl">Packaging</span>
+                        <span class="val">25kg Vacuum Cartons</span>
+                      </div>
+                    </div>
+                    <div class="slide-action-bar">
+                      <button class="btn btn-primary btn-quote-product" data-commodity="cashew" data-grade="w180">
+                        <span>⚡ Quote W-180 Grade</span>
+                      </button>
+                      <button class="btn btn-gold-outline btn-request-sample">Request 500g Sample</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2: W-210 Large -->
+              <div class="product-slide" data-category="cashew">
+                <div class="slide-grid">
+                  <div class="slide-visual-box">
+                    <span class="slide-badge-origin">Origin: Côte d'Ivoire / Vietnam</span>
+                    <img src="assets/images/cashew-jumbo.svg" alt="W210 Large Cashew">
+                    <span class="slide-grade-tag">JUMBO WHOLE</span>
+                  </div>
+                  <div class="slide-info-box">
+                    <span class="slide-category-name">Premium Whole Cashew</span>
+                    <h3>W-210 Jumbo Large Grade</h3>
+                    <p class="slide-description">
+                      Premium whole white cashew kernels yielding 180 to 210 kernels per pound. High-end visual presentation, uniform ivory coloring, and exceptional sweetness. Favored by gourmet roasters and European snack brands.
+                    </p>
+                    <div class="slide-specs-grid">
+                      <div class="spec-cell">
+                        <span class="lbl">Nut Count / lb</span>
+                        <span class="val highlight">180 – 210 Kernels</span>
+                      </div>
+                      <div class="spec-cell">
+                        <span class="lbl">Moisture Content</span>
+                        <span class="val">&lt; 5.0%</span>
+                      </div>
+                      <div class="spec-cell">
+                        <span class="lbl">Broken Tolerance</span>
+                        <span class="val">&lt; 4.0%</span>
+                      </div>
+                      <div class="spec-cell">
+                        <span class="lbl">Packaging</span>
+                        <span class="val">25kg Vacuum / 10kg Pouches</span>
+                      </div>
+                    </div>
+                    <div class="slide-action-bar">
+                      <button class="btn btn-primary btn-quote-product" data-commodity="cashew" data-grade="w210">
+                        <span>⚡ Quote W-210 Grade</span>
+                      </button>
+                      <button class="btn btn-gold-outline btn-request-sample">Request Sample</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3: W-320 World Standard -->
+              <div class="product-slide" data-category="cashew">
+                <div class="slide-grid">
+                  <div class="slide-visual-box">
+                    <span class="slide-badge-origin">Origin: West Africa / Vietnam Hub</span>
+                    <img src="assets/images/cashew-jumbo.svg" alt="W320 Cashew Nut">
+                    <span class="slide-grade-tag">GLOBAL BENCHMARK</span>
+                  </div>
+                  <div class="slide-info-box">
+                    <span class="slide-category-name">World Volume Leader</span>
+                    <h3>W-320 Standard White Whole</h3>
+                    <p class="slide-description">
+                      The undisputed international benchmark of the global cashew trade. 300 to 320 kernels per pound. Offers the optimal balance of large kernel size, competitive metric-ton pricing, and versatile retail/confectionery application.
+                    </p>
+                    <div class="slide-specs-grid">
+                      <div class="spec-cell">
+                        <span class="lbl">Nut Count / lb</span>
+                        <span class="val highlight">300 – 320 Kernels</span>
+                      </div>
+                      <div class="spec-cell">
+                        <span class="lbl">Moisture Content</span>
+                        <span class="val">&lt; 5.0% Max</span>
+                      </div>
+                      <div class="spec-cell">
+                        <span class="lbl">Broken Tolerance</span>
+                        <span class="val">&lt; 5.0%</span>
+                      </div>
+                      <div class="spec-cell">
+                        <span class="lbl">Available Volume</span>
+                        <span class="val highlight">500+ MT / Month</span>
+                      </div>
+                    </div>
+                    <div class="slide-action-bar">
+                      <button class="btn btn-primary btn-quote-product" data-commodity="cashew" data-grade="w320">
+                        <span>⚡ Quote W-320 Grade</span>
+                      </button>
+                      <button class="btn btn-gold-outline btn-request-sample">Request Sample</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 4: Raw Cashew Nuts (RCN) -->
+              <div class="product-slide" data-category="rcn">
+                <div class="slide-grid">
+                  <div class="slide-visual-box">
+                    <span class="slide-badge-origin">Origin: Guinea / Guinea-Bissau</span>
+                    <img src="assets/images/cashew-raw.svg" alt="Raw Cashew Nuts in Shell">
+                    <span class="slide-grade-tag">HIGH KOR OUTTURN</span>
+                  </div>
+                  <div class="slide-info-box">
+                    <span class="slide-category-name">Raw Agricultural Commodity</span>
+                    <h3>Raw Cashew Nuts (RCN In-Shell)</h3>
+                    <p class="slide-description">
+                      Directly procured from local farmer collectives in the fertile coastal soils of Guinea, Côte d'Ivoire, and Guinea-Bissau. Well-dried, high kernel outturn ratio (KOR), and optimal nut count per kilogram. Packed in breathable jute bags.
+                    </p>
+                    <div class="slide-specs-grid">
+                      <div class="spec-cell">
+                        <span class="lbl">Kernel Outturn (KOR)</span>
+                        <span class="val highlight">48 – 52+ lbs / 80kg bag</span>
+                      </div>
+                      <div class="spec-cell">
+                        <span class="lbl">Nut Count</span>
+                        <span class="val">180 – 200 nuts / kg</span>
+                      </div>
+                      <div class="spec-cell">
+                        <span class="lbl">Moisture Content</span>
+                        <span class="val">&lt; 8.0% Max</span>
+                      </div>
+                      <div class="spec-cell">
+                        <span class="lbl">Defective / Void Max</span>
+                        <span class="val">&lt; 6.0%</span>
+                      </div>
+                    </div>
+                    <div class="slide-action-bar">
+                      <button class="btn btn-primary btn-quote-product" data-commodity="cashew" data-grade="rcn">
+                        <span>⚡ Quote RCN In-Shell</span>
+                      </button>
+                      <button class="btn btn-gold-outline btn-request-sample">Request Origin Report</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 5: Rice Varieties -->
+              <div class="product-slide" data-category="rice">
+                <div class="slide-grid">
+                  <div class="slide-visual-box">
+                    <span class="slide-badge-origin">Origin: India / Vietnam / Thailand</span>
+                    <img src="assets/images/product-rice.svg" alt="Rice Varieties">
+                    <span class="slide-grade-tag">100% SORTEX CLEANED</span>
+                  </div>
+                  <div class="slide-info-box">
+                    <span class="slide-category-name">Staple Agricultural Commodities</span>
+                    <h3>Premium Rice Varieties (Basmati &amp; Jasmine)</h3>
+                    <p class="slide-description">
+                      Sourced from premier paddy fields across Asia. Offering extra-long 1121 Steam Basmati (8.35mm average grain length) and naturally aromatic Jasmine Rice. Double-polished, 100% sortexed, free from chalky grains and foreign matter.
+                    </p>
+                    <div class="slide-specs-grid">
+                      <div class="spec-cell">
+                        <span class="lbl">Grain Length</span>
+                        <span class="val highlight">8.35mm+ (Basmati)</span>
+                      </div>
+                      <div class="spec-cell">
+                        <span class="lbl">Broken Grains</span>
+                        <span class="val">&lt; 1.0% to 5.0%</span>
+                      </div>
+                      <div class="spec-cell">
+                        <span class="lbl">Moisture Content</span>
+                        <span class="val">&lt; 12.5%</span>
+                      </div>
+                      <div class="spec-cell">
+                        <span class="lbl">Packaging</span>
+                        <span class="val">25kg / 50kg PP Bags</span>
+                      </div>
+                    </div>
+                    <div class="slide-action-bar">
+                      <button class="btn btn-primary btn-quote-product" data-commodity="rice" data-grade="basmati">
+                        <span>⚡ Quote Rice Commodities</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 6: Sesame Seeds -->
+              <div class="product-slide" data-category="sesame">
+                <div class="slide-grid">
+                  <div class="slide-visual-box">
+                    <span class="slide-badge-origin">Origin: Africa / India</span>
+                    <img src="assets/images/product-sesame.svg" alt="Sesame Seeds">
+                    <span class="slide-grade-tag">99.95% PURITY</span>
+                  </div>
+                  <div class="slide-info-box">
+                    <span class="slide-category-name">Oilseed Commodities</span>
+                    <h3>Natural &amp; Hulled Sesame Seeds</h3>
+                    <p class="slide-description">
+                      Premium auto-sortexed sesame seeds. Available as Hulled White (99.95% purity for premium bakery, confectionery, and tahini paste) and Natural White / Black sesame seeds with high natural oil content.
+                    </p>
+                    <div class="slide-specs-grid">
+                      <div class="spec-cell">
+                        <span class="lbl">Purity Level</span>
+                        <span class="val highlight">99.9% to 99.95%</span>
+                      </div>
+                      <div class="spec-cell">
+                        <span class="lbl">Natural Oil Content</span>
+                        <span class="val">&gt; 48% to 52%</span>
+                      </div>
+                      <div class="spec-cell">
+                        <span class="lbl">Moisture</span>
+                        <span class="val">&lt; 5.0% Max</span>
+                      </div>
+                      <div class="spec-cell">
+                        <span class="lbl">Free Fatty Acid (FFA)</span>
+                        <span class="val">&lt; 1.5%</span>
+                      </div>
+                    </div>
+                    <div class="slide-action-bar">
+                      <button class="btn btn-primary btn-quote-product" data-commodity="sesame" data-grade="hulled">
+                        <span>⚡ Quote Sesame Seeds</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 7: Cocoa & Spices -->
+              <div class="product-slide" data-category="cocoa">
+                <div class="slide-grid">
+                  <div class="slide-visual-box">
+                    <span class="slide-badge-origin">Origin: West Africa &amp; Madagascar</span>
+                    <img src="assets/images/product-cocoa.svg" alt="Cocoa Beans & Spices">
+                    <span class="slide-grade-tag">SUSTAINABLY HARVESTED</span>
+                  </div>
+                  <div class="slide-info-box">
+                    <span class="slide-category-name">Cocoa &amp; Fine Spices</span>
+                    <h3>Raw Cocoa Beans, Cloves &amp; Black Pepper</h3>
+                    <p class="slide-description">
+                      Properly fermented sun-dried raw cocoa beans (Grade 1 bean count &lt; 100/100g), hand-picked Zanzibar cloves with rich volatile oil (&gt;18%), and high-density Vietnamese black peppercorns (550-570 g/l).
+                    </p>
+                    <div class="slide-specs-grid">
+                      <div class="spec-cell">
+                        <span class="lbl">Cocoa Bean Count</span>
+                        <span class="val highlight">95 – 100 / 100g</span>
+                      </div>
+                      <div class="spec-cell">
+                        <span class="lbl">Fermentation Level</span>
+                        <span class="val">&gt; 80% Fully Fermented</span>
+                      </div>
+                      <div class="spec-cell">
+                        <span class="lbl">Clove Essential Oil</span>
+                        <span class="val">&gt; 18.0%</span>
+                      </div>
+                      <div class="spec-cell">
+                        <span class="lbl">Pepper Density</span>
+                        <span class="val">570 g/l ASTA</span>
+                      </div>
+                    </div>
+                    <div class="slide-action-bar">
+                      <button class="btn btn-primary btn-quote-product" data-commodity="cocoa" data-grade="cocoa_raw">
+                        <span>⚡ Quote Cocoa &amp; Spices</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Slider Bottom Pagination & Progress -->
+          <div class="slider-bottom-bar">
+            <div class="slider-dots"></div>
+            <div class="slider-progress-track">
+              <div class="slider-progress-bar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CUSTOM SLIDER 2: GLOBAL SUPPLY CHAIN JOURNEY
+         ========================================== -->
+    <section class="section-padding supply-chain-section" id="supply-chain">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">FARM GATE TO GLOBAL PORTS</span>
+          <h2 class="section-title">Integrated Global Supply Chain</h2>
+          <p class="section-desc">
+            Direct farmer procurement, independent origin testing, cutting-edge processing hubs, and Singapore logistics management ensuring guaranteed quality and traceability.
+          </p>
+        </div>
+
+        <div id="supply-chain-slider">
+          <!-- Stepper Navigation -->
+          <div class="supply-timeline-stepper">
+            <div class="supply-progress-line">
+              <div class="supply-progress-fill"></div>
+            </div>
+
+            <button class="supply-step active" data-step="0">
+              <div class="step-node">01</div>
+              <span class="step-name">Origin Sourcing</span>
+            </button>
+            <button class="supply-step" data-step="1">
+              <div class="step-node">02</div>
+              <span class="step-name">Origin Lab Testing</span>
+            </button>
+            <button class="supply-step" data-step="2">
+              <div class="step-node">03</div>
+              <span class="step-name">Sortex Processing</span>
+            </button>
+            <button class="supply-step" data-step="3">
+              <div class="step-node">04</div>
+              <span class="step-name">Vacuum Nitrogen Packaging</span>
+            </button>
+            <button class="supply-step" data-step="4">
+              <div class="step-node">05</div>
+              <span class="step-name">Singapore Clearing &amp; Freight</span>
+            </button>
+          </div>
+
+          <!-- Cards per Step -->
+          <div class="supply-card-wrapper">
+            <!-- Card 1 -->
+            <div class="supply-card active">
+              <div class="supply-card-grid">
+                <div>
+                  <span class="hub-tag">West Africa: Guinea, Côte d'Ivoire, Guinea-Bissau</span>
+                  <h4>Direct Origin Procurement &amp; Farmer Partnerships</h4>
+                  <p>
+                    Our ground procurement teams maintain direct partnerships with agricultural cooperatives across West Africa's most fertile cashew zones. By operating our own buying stations and warehousing at origin, we eliminate secondary middlemen and secure the season's finest raw crops.
+                  </p>
+                  <ul class="supply-feature-list">
+                    <li>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                      <span>Direct farm-gate aggregation with transparent pricing for growers</span>
+                    </li>
+                    <li>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                      <span>Pre-drying under tropical sun to stabilize moisture below 8.0%</span>
+                    </li>
+                    <li>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                      <span>Ventilated warehouse storage ensuring zero fermentation or fungal damage</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="supply-stat-box">
+                  <div class="stat-big">25,000+</div>
+                  <div class="stat-label">Metric Tons Procured Annually</div>
+                  <button class="btn btn-gold-outline supply-next-btn">Next: Lab Testing &rarr;</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="supply-card">
+              <div class="supply-card-grid">
+                <div>
+                  <span class="hub-tag">Origin Ports: Conakry &bull; Abidjan &bull; Bissau</span>
+                  <h4>Rigorous Origin Laboratory Analysis &amp; SGS Verification</h4>
+                  <p>
+                    Every consignment is sampled and tested according to international standard protocol prior to export loading. We measure Kernel Outturn Ratio (KOR), moisture loss on drying at 105°C, void percentage, and foreign matter.
+                  </p>
+                  <ul class="supply-feature-list">
+                    <li>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                      <span>Independent third-party inspection (SGS, Cotecna, Bureau Veritas)</span>
+                    </li>
+                    <li>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                      <span>Official Phytosanitary and Origin Fumigation certificates included</span>
+                    </li>
+                    <li>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                      <span>Batch tracking barcode attached to every container shipment</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="supply-stat-box">
+                  <div class="stat-big">100%</div>
+                  <div class="stat-label">Batch Traceability Guaranteed</div>
+                  <button class="btn btn-gold-outline supply-next-btn">Next: Processing &rarr;</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="supply-card">
+              <div class="supply-card-grid">
+                <div>
+                  <span class="hub-tag">Processing Centers: Vietnam &bull; India</span>
+                  <h4>State-of-the-Art Optical Sortex Grading &amp; Steam Shelling</h4>
+                  <p>
+                    Equipped with advanced Bühler optical color sorters, infrared cameras, and automated sizing cylinders. The cashew kernels are carefully steamed, shelled, peeled, and categorized into exact AFI count classes (W180, W210, W240, W320, W450).
+                  </p>
+                  <ul class="supply-feature-list">
+                    <li>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                      <span>HACCP and BRCGS food safety certified facilities</span>
+                    </li>
+                    <li>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                      <span>Zero metal contamination verified with in-line metal detectors and X-Ray</span>
+                    </li>
+                    <li>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                      <span>Scorched and dessert kernels strictly separated from first-quality white grades</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="supply-stat-box">
+                  <div class="stat-big">&lt; 0.5%</div>
+                  <div class="stat-label">Foreign Matter Defect Rate</div>
+                  <button class="btn btn-gold-outline supply-next-btn">Next: Packaging &rarr;</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="supply-card">
+              <div class="supply-card-grid">
+                <div>
+                  <span class="hub-tag">Protective Packaging: Vacuum + Nitrogen Flush (N2)</span>
+                  <h4>Multi-Layer Barrier Packaging for Maximum Freshness</h4>
+                  <p>
+                    Oxidation and moisture are the enemies of nut shelf-life. Our kernels are sealed inside high-barrier EVOH / nylon pouches, vacuum evacuated, and nitrogen flushed to guarantee 24 months of natural flavor and crispy texture.
+                  </p>
+                  <ul class="supply-feature-list">
+                    <li>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                      <span>Heavy-duty 5-ply corrugated export cartons resistant to sea humidity</span>
+                    </li>
+                    <li>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                      <span>Options for 25kg bulk, 10kg dual pouches, or retail OEM private label</span>
+                    </li>
+                    <li>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                      <span>Food-grade virgin polymers compliant with US FDA and EU Regulation 10/2011</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="supply-stat-box">
+                  <div class="stat-big">24 Mo</div>
+                  <div class="stat-label">Guaranteed Ambient Shelf Life</div>
+                  <button class="btn btn-gold-outline supply-next-btn">Next: Singapore Logistics &rarr;</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="supply-card">
+              <div class="supply-card-grid">
+                <div>
+                  <span class="hub-tag">HQ: High Street Centre, Singapore 179094</span>
+                  <h4>Singapore Headquarters Financial Clearing &amp; Global Shipping</h4>
+                  <p>
+                    COSMOS SG Trading PTE LTD coordinates international logistics, marine insurance, and trade financing (Letter of Credit L/C, CAD, T/T) from the world’s most trusted maritime trading capital, Singapore.
+                  </p>
+                  <ul class="supply-feature-list">
+                    <li>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                      <span>Flexible Incoterms: CIF, CFR, FOB, or DDP destination delivery</span>
+                    </li>
+                    <li>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                      <span>Fast container vessel bookings with Maersk, MSC, CMA-CGM, and ONE</span>
+                    </li>
+                    <li>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                      <span>Full documentation: Bill of Lading, Certificate of Origin, Form AK / E</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="supply-stat-box">
+                  <div class="stat-big">50+</div>
+                  <div class="stat-label">Global Ports Served Directly</div>
+                  <a href="#quote-form-hero" class="btn btn-primary">Start Your Shipment</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CUSTOM SLIDER 3: PACKAGING SOLUTIONS 3D CAROUSEL
+         ========================================== -->
+    <section class="section-padding packaging-section" id="packaging">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">ENGINEERED PROTECTION</span>
+          <h2 class="section-title">Industrial &amp; Retail Packaging Formats</h2>
+          <p class="section-desc">
+            Tailored packaging formats configured for maritime freight efficiency, food manufacturer handling, and supermarket shelf readiness. Click to cycle through configurations.
+          </p>
+        </div>
+
+        <div id="packaging-carousel">
+          <div class="pkg-carousel-container">
+            <!-- Card 1: 25kg Bulk Vacuum Carton -->
+            <div class="pkg-card pkg-active">
+              <div class="pkg-icon-wrap">
+                <img src="assets/images/packaging-carton.svg" alt="25kg Vacuum Carton">
+              </div>
+              <h4>25kg (50lb) Vacuum Carton</h4>
+              <div class="pkg-specs">Standard Export Configuration</div>
+              <p>Heavy-duty 5-ply corrugated export carton containing a sealed barrier foil/poly pouch with nitrogen flush. 640–700 cartons per 20ft container.</p>
+              <span class="pkg-feature-badge">⚡ Recommended for Wholesale Roasters</span>
+            </div>
+
+            <!-- Card 2: 10kg Dual Pouches -->
+            <div class="pkg-card pkg-next">
+              <div class="pkg-icon-wrap">
+                <img src="assets/images/packaging-carton.svg" alt="10kg Vacuum Bags">
+              </div>
+              <h4>10kg Dual Vacuum Pouches</h4>
+              <div class="pkg-specs">2 x 10kg per Master Carton</div>
+              <p>Designed for food service, bakeries, and regional distributors who prefer smaller opening batches to maintain optimal crunchiness upon daily use.</p>
+              <span class="pkg-feature-badge">Food Service Favorite</span>
+            </div>
+
+            <!-- Card 3: Retail Stand-Up Pouches -->
+            <div class="pkg-card pkg-hidden">
+              <div class="pkg-icon-wrap">
+                <img src="assets/images/packaging-carton.svg" alt="Retail Pouches">
+              </div>
+              <h4>Retail Zipper Pouches (100g–1kg)</h4>
+              <div class="pkg-specs">Private Label OEM Ready</div>
+              <p>Custom-printed stand-up barrier pouches with resealable zip-lock, tear notch, and euro-hole for hanging. Complete OEM branding available.</p>
+              <span class="pkg-feature-badge">Direct Supermarket Shelf Ready</span>
+            </div>
+
+            <!-- Card 4: 80kg Jute Sacks -->
+            <div class="pkg-card pkg-prev">
+              <div class="pkg-icon-wrap">
+                <img src="assets/images/cashew-raw.svg" alt="Jute Sacks">
+              </div>
+              <h4>80kg Breathable Jute Sacks</h4>
+              <div class="pkg-specs">For Raw In-Shell Cashews (RCN)</div>
+              <p>Natural woven burlap/jute sacks permitting continuous air circulation during ocean transit, preventing internal sweating and seed germination.</p>
+              <span class="pkg-feature-badge">Origin Standard for RCN</span>
+            </div>
+          </div>
+
+          <div class="pkg-nav-arrows">
+            <button class="slider-arrow-btn pkg-prev" aria-label="Previous Packaging">&larr;</button>
+            <button class="slider-arrow-btn pkg-next" aria-label="Next Packaging">&rarr;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CONTAINER LOAD CALCULATOR
+         ========================================== -->
+    <section class="section-padding calculator-section" id="calculator">
+      <div class="container">
+        <div class="calc-box">
+          <div class="calc-grid">
+            <div>
+              <span class="section-tag">LOGISTICS PLANNING TOOL</span>
+              <h3 style="font-family: var(--font-serif); font-size: 2rem; color: #FFFFFF; margin-bottom: 12px;">
+                Container Load &amp; CBM Estimator
+              </h3>
+              <p style="color: var(--text-muted); margin-bottom: 24px; font-size: 0.95rem;">
+                Calculate full container load (FCL) metrics for your destination port. Optimize payload weight and container utilization.
+              </p>
+
+              <div class="calc-inputs">
+                <div class="form-group">
+                  <label for="calc-container-type">Container Specification</label>
+                  <select id="calc-container-type" class="form-select">
+                    <option value="20" selected>20ft FCL Standard Dry Container (33.2 CBM)</option>
+                    <option value="40">40ft FCL High Cube Container (76.2 CBM)</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="calc-product-type">Commodity Packaging</label>
+                  <select id="calc-product-type" class="form-select">
+                    <option value="cashew_carton" selected>Cashew Kernels in 25kg Vacuum Cartons</option>
+                    <option value="rcn_bags">Raw Cashew Nuts (RCN) in 80kg Jute Sacks</option>
+                    <option value="rice_bags">Rice Varieties in 50kg PP Woven Bags</option>
+                    <option value="sesame_bags">Sesame Seeds in 50kg Bags</option>
+                  </select>
+                </div>
+
+                <button class="btn btn-primary" id="btn-calculate-load">
+                  <span>Calculate Container Capacity</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Result Display -->
+            <div id="calc-result-display">
+              <div class="calc-metrics-grid">
+                <div class="metric-card">
+                  <span class="m-val">16.0 MT</span>
+                  <span class="m-lbl">Net Cargo Weight</span>
+                </div>
+                <div class="metric-card">
+                  <span class="m-val">640</span>
+                  <span class="m-lbl">Cartons (25kg Net Vacuum)</span>
+                </div>
+                <div class="metric-card">
+                  <span class="m-val">10 Pallets</span>
+                  <span class="m-lbl">Palletized Config (Optional)</span>
+                </div>
+                <div class="metric-card highlight">
+                  <span class="m-val">33.2 CBM</span>
+                  <span class="m-lbl">Container Volume Utilized</span>
+                </div>
+              </div>
+              <p class="calc-note">
+                <span class="text-gold">&#9432;</span> All shipments include desiccants, fumigation certificate, Phytosanitary, and SGS/Cotecna weight &amp; quality certificates.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         AFI CASHEW GRADE SPECIFICATION MATRIX
+         ========================================== -->
+    <section class="section-padding matrix-section" id="standards">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">AFI QUALITY COMPLIANCE</span>
+          <h2 class="section-title">Official Cashew Grade Matrix</h2>
+          <p class="section-desc">
+            COSMOS SG operates in strict accordance with the Association of Food Industries (AFI) cashew standards for color, count, and defect tolerance.
+          </p>
+        </div>
+
+        <div class="matrix-table-wrap">
+          <table class="matrix-table">
+            <thead>
+              <tr>
+                <th>Grade Code</th>
+                <th>Classification</th>
+                <th>Kernels per Pound</th>
+                <th>Max Moisture</th>
+                <th>Broken Kernel Max</th>
+                <th>Best Application</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="grade-name">W-180</td>
+                <td>King of Cashews (Jumbo)</td>
+                <td>140 – 180 / lb</td>
+                <td>5.0%</td>
+                <td>3.0%</td>
+                <td>Luxury gifting, gourmet roasting</td>
+                <td><button class="btn btn-gold-outline btn-quote-product" data-commodity="cashew" data-grade="w180" style="padding:6px 12px; font-size:0.75rem;">Quote</button></td>
+              </tr>
+              <tr>
+                <td class="grade-name">W-210</td>
+                <td>Jumbo Whole White</td>
+                <td>180 – 210 / lb</td>
+                <td>5.0%</td>
+                <td>4.0%</td>
+                <td>Premium consumer snack packs</td>
+                <td><button class="btn btn-gold-outline btn-quote-product" data-commodity="cashew" data-grade="w210" style="padding:6px 12px; font-size:0.75rem;">Quote</button></td>
+              </tr>
+              <tr>
+                <td class="grade-name">W-240</td>
+                <td>Standard Large Whole</td>
+                <td>220 – 240 / lb</td>
+                <td>5.0%</td>
+                <td>5.0%</td>
+                <td>Commercial retail blends</td>
+                <td><button class="btn btn-gold-outline btn-quote-product" data-commodity="cashew" data-grade="w240" style="padding:6px 12px; font-size:0.75rem;">Quote</button></td>
+              </tr>
+              <tr>
+                <td class="grade-name">W-320</td>
+                <td>World Standard Whole</td>
+                <td>300 – 320 / lb</td>
+                <td>5.0%</td>
+                <td>5.0%</td>
+                <td>Global volume retail, salted snacks</td>
+                <td><button class="btn btn-gold-outline btn-quote-product" data-commodity="cashew" data-grade="w320" style="padding:6px 12px; font-size:0.75rem;">Quote</button></td>
+              </tr>
+              <tr>
+                <td class="grade-name">W-450</td>
+                <td>Small Whole White</td>
+                <td>400 – 450 / lb</td>
+                <td>5.0%</td>
+                <td>6.0%</td>
+                <td>Value retail, chocolate enrobing</td>
+                <td><button class="btn btn-gold-outline btn-quote-product" data-commodity="cashew" data-grade="w450" style="padding:6px 12px; font-size:0.75rem;">Quote</button></td>
+              </tr>
+              <tr>
+                <td class="grade-name">WS</td>
+                <td>White Splits (Halves)</td>
+                <td>Natural Cotyledons</td>
+                <td>5.0%</td>
+                <td>N/A (Split)</td>
+                <td>Bakery, energy bars, spreads</td>
+                <td><button class="btn btn-gold-outline btn-quote-product" data-commodity="cashew" data-grade="ws" style="padding:6px 12px; font-size:0.75rem;">Quote</button></td>
+              </tr>
+              <tr>
+                <td class="grade-name">LP</td>
+                <td>Large White Pieces</td>
+                <td>Screened fragments</td>
+                <td>5.0%</td>
+                <td>N/A (Pieces)</td>
+                <td>Industrial cashew milk, confectionery</td>
+                <td><button class="btn btn-gold-outline btn-quote-product" data-commodity="cashew" data-grade="lp" style="padding:6px 12px; font-size:0.75rem;">Quote</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         QUALITY & CERTIFICATIONS
+         ========================================== -->
+    <section class="section-padding cert-section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">GLOBAL ACCREDITATIONS</span>
+          <h2 class="section-title">International Food Safety &amp; Compliance</h2>
+          <p class="section-desc">
+            All COSMOS SG products undergo multi-point testing matching international border import protocols for the USA, European Union, Middle East, and Asia-Pacific.
+          </p>
+        </div>
+
+        <div class="cert-grid">
+          <div class="cert-card">
+            <div class="cert-badge-icon">H</div>
+            <h5>HACCP</h5>
+            <p>Hazard Analysis Critical Control Points Certified</p>
+          </div>
+          <div class="cert-card">
+            <div class="cert-badge-icon">ISO</div>
+            <h5>ISO 22000</h5>
+            <p>Food Safety Management System Standard</p>
+          </div>
+          <div class="cert-card">
+            <div class="cert-badge-icon">BRC</div>
+            <h5>BRCGS Food</h5>
+            <p>Global Standard for Food Safety Grade A</p>
+          </div>
+          <div class="cert-card">
+            <div class="cert-badge-icon">HAL</div>
+            <h5>HALAL</h5>
+            <p>Certified Halal Processing &amp; Handling</p>
+          </div>
+          <div class="cert-card">
+            <div class="cert-badge-icon">KOS</div>
+            <h5>KOSHER</h5>
+            <p>Rabbinical Supervised Kosher Compliance</p>
+          </div>
+          <div class="cert-card">
+            <div class="cert-badge-icon">FDA</div>
+            <h5>US FDA Reg.</h5>
+            <p>US Food and Drug Administration Facility Registered</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CUSTOM SLIDER 4: VERIFIED BUYER TESTIMONIALS
+         ========================================== -->
+    <section class="section-padding testimonial-section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">TRUSTED COMMODITY PARTNERS</span>
+          <h2 class="section-title">Verified Buyer Testimonials</h2>
+        </div>
+
+        <div id="testimonial-slider" class="testimonial-slider-wrap">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card active">
+            <div class="stars-row">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testi-quote">
+              &ldquo;We have contracted over 40 FCLs of W-320 and W-240 cashews through COSMOS SG Trading over the past two seasons. The moisture consistency (&lt;4.5%) and broken percentage (&lt;3%) are consistently cleaner than other suppliers. Their Singapore office gives us total confidence in letters of credit.&rdquo;
+            </p>
+            <div class="testi-author">
+              <strong>Marcus Becker</strong>
+              <span>Head of Raw Procurement, German Confectionery Group (Hamburg)</span>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <div class="stars-row">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testi-quote">
+              &ldquo;Finding consistent Raw Cashew Nuts (RCN) from Guinea with authentic 50+ lbs KOR outturn used to be a gamble. COSMOS SG’s origin teams provided third-party Cotecna cutting tests before ocean loading. Every container delivered as promised.&rdquo;
+            </p>
+            <div class="testi-author">
+              <strong>Nguyen Van Thanh</strong>
+              <span>Managing Director, Cashew Processing Co. (Binh Phuoc, Vietnam)</span>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <div class="stars-row">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testi-quote">
+              &ldquo;The vacuum-sealed 25kg cartons arrived in Rotterdam without a single ruptured pouch. Color uniformity of the W180 King Jumbo was extraordinary. Our premium retail roaster clients were delighted.&rdquo;
+            </p>
+            <div class="testi-author">
+              <strong>David Sterling</strong>
+              <span>Senior Commodity Trader, Rotterdam Port Logistics (Netherlands)</span>
+            </div>
+          </div>
+
+          <!-- Dots Navigation -->
+          <div class="testi-dots">
+            <button class="testi-dot active" aria-label="Review 1"></button>
+            <button class="testi-dot" aria-label="Review 2"></button>
+            <button class="testi-dot" aria-label="Review 3"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         ABOUT US & SINGAPORE HEAD OFFICE
+         ========================================== -->
+    <section class="section-padding about-section" id="about">
+      <div class="container about-grid">
+        <div class="about-text">
+          <span class="section-tag">COMPANY BACKGROUND</span>
+          <h3>Bridging Global Agricultural Sourcing with Absolute Integrity</h3>
+          <p>
+            Incorporated in Singapore on 25 December 2022 (UEN: 202245818G), <strong>COSMOS SG Trading PTE LTD</strong> was founded under the leadership of Founder &amp; Director Shams Uddin Chaudhry to establish a higher standard of transparency, reliability, and precision grading in international agricultural commodity trading.
+          </p>
+          <p>
+            What began as a specialized cashew trading venture has expanded into a comprehensive global supply network managing premium cashews, rice varieties, sesame seeds, cocoa, and fine spices. With sourcing networks in Guinea, Côte d'Ivoire, and Guinea-Bissau, advanced optical sorting in Vietnam and India, and corporate financial headquarters in Singapore, we deliver with care and integrity.
+          </p>
+          <div style="margin-top: 25px;">
+            <a href="#quote-form-hero" class="btn btn-primary">Start a Trade Partnership</a>
+          </div>
+        </div>
+
+        <div class="singapore-hq-card" id="contact">
+          <img src="assets/images/singapore-seal.svg" alt="Singapore Seal" class="hq-seal-badge">
+          <h4>Singapore Head Office</h4>
+          <span class="hq-uen-badge">UEN: 202245818G</span>
+
+          <ul class="hq-info-list">
+            <li>
+              <strong>Address:</strong>
+              <span>1 North Bridge Road, High Street Centre, Unit #10-09, Singapore 179094</span>
+            </li>
+            <li>
+              <strong>Telephone:</strong>
+              <a href="tel:+6563380774" class="text-gold">+65 63380774</a>
+            </li>
+            <li>
+              <strong>Fax:</strong>
+              <span>+65 63380359</span>
+            </li>
+            <li>
+              <strong>Email:</strong>
+              <a href="mailto:info@cosmos-sg.com" class="text-gold">info@cosmos-sg.com</a>
+            </li>
+            <li>
+              <strong>Office Hours:</strong>
+              <span>Mon – Fri: 9:00 AM – 6:00 PM (SGT)<br>Saturday: 9:00 AM – 1:00 PM (Sunday Closed)</span>
+            </li>
+          </ul>
+
+          <div style="margin-top: 25px; padding-top: 18px; border-top: 1px solid rgba(212, 163, 89, 0.2);">
+            <a href="https://wa.me/6563380774" target="_blank" rel="noopener" class="btn btn-whatsapp-direct" style="width: 100%;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+              <span>Instant Chat with Singapore Desk</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         FAQ ACCORDION
+         ========================================== -->
+    <section class="section-padding faq-section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">FREQUENTLY ASKED QUESTIONS</span>
+          <h2 class="section-title">Wholesale &amp; International Trade FAQ</h2>
+        </div>
+
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>What is your Minimum Order Quantity (MOQ) for cashew nuts?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Our standard MOQ for maritime export is one 20ft Full Container Load (FCL), which accommodates approximately 16.0 Metric Tons (640 cartons of 25kg vacuum packs). For trial orders or specialized single grades (e.g., W180 Jumbo), we accommodate mixed container loads (LCL or mixed FCL) upon prior agreement with our trading desk.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Can we request a sample batch before placing a commercial contract?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes. We provide 500g to 1kg vacuum-sealed laboratory test samples for bona fide corporate buyers and food manufacturers. Samples are dispatched via DHL/FedEx Express alongside full analytical specs (moisture, count, broken percentage).
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>What payment and trade financing terms does COSMOS SG accept?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                We accept 100% Irrevocable Letter of Credit at Sight (L/C at Sight) issued by prime international banks, Telegraphic Transfer (T/T with advance deposit and balance against copy shipping documents), and CAD (Cash Against Documents). All transactions clear securely through our Singapore corporate banking facilities.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>How do you guarantee quality and prevent sea damage during transit?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                We utilize nitrogen-flushed multi-barrier vacuum pouches within heavy 5-ply export master cartons. Every container is lined with container desiccants (dry bags) and undergo third-party pre-shipment inspection by SGS or Cotecna for moisture (&lt;5%), count, and weight certification.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logo.svg" alt="COSMOS SG" style="max-height: 55px; margin-bottom: 12px;">
+          <p>
+            COSMOS SG Trading PTE LTD is a Singapore-incorporated global supplier of premium cashew nuts and agricultural commodities. Sourced with integrity, delivered with care.
+          </p>
+          <p class="font-mono text-gold" style="font-size: 0.8rem;">
+            UEN: 202245818G &bull; GST Registered
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Cashew Grades</h5>
+          <ul>
+            <li><a href="#products">W-180 King Jumbo</a></li>
+            <li><a href="#products">W-210 Jumbo Large</a></li>
+            <li><a href="#products">W-240 Standard Large</a></li>
+            <li><a href="#products">W-320 World Standard</a></li>
+            <li><a href="#products">WS Splits &amp; LP Pieces</a></li>
+            <li><a href="#products">Raw Cashew Nuts (RCN)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Other Commodities</h5>
+          <ul>
+            <li><a href="#products">1121 Steam Basmati Rice</a></li>
+            <li><a href="#products">Jasmine Fragrant Rice</a></li>
+            <li><a href="#products">Hulled White Sesame</a></li>
+            <li><a href="#products">Natural Black Sesame</a></li>
+            <li><a href="#products">Fermented Raw Cocoa</a></li>
+            <li><a href="#products">Zanzibar Whole Cloves</a></li>
+            <li><a href="#products">Black Pepper 570 g/l</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Singapore Head Office</h5>
+          <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.6;">
+            1 North Bridge Road,<br>
+            High Street Centre, Unit #10-09,<br>
+            Singapore 179094<br><br>
+            Tel: +65 63380774<br>
+            Email: info@cosmos-sg.com
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 COSMOS SG Trading PTE LTD. All rights reserved. Sourced with Integrity, Delivered with Care.
+        </div>
+        <div>
+          <span>Singapore &bull; Vietnam &bull; Guinea &bull; Côte d'Ivoire &bull; India &bull; Netherlands</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       FLOATING WHATSAPP ACTION
+       ========================================== -->
+  <a href="https://wa.me/6563380774?text=Hello%20COSMOS%20SG%20Trading%20Desk,%20I%20would%20like%20to%20request%20a%20wholesale%20quotation." 
+     target="_blank" rel="noopener" class="floating-whatsapp-desk" aria-label="Chat with Singapore Trading Desk on WhatsApp">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+    <span>WhatsApp Singapore Desk</span>
+  </a>
+
+  <!-- ==========================================
+       MODAL: CASHEW ANATOMY & INSPECTION
+       ========================================== -->
+  <div class="cosmos-modal-backdrop" id="cashew-spec-modal">
+    <div class="cosmos-modal-card">
+      <button class="modal-close-btn modal-close-trigger" aria-label="Close modal">&times;</button>
+      <div style="text-align: center; margin-bottom: 20px;">
+        <span class="rfq-tag">MICROSCOPIC QUALITY BENCHMARK</span>
+        <h3 style="font-family: var(--font-serif); font-size: 1.8rem; color: #FFFFFF; margin-top: 6px;">
+          Cashew Kernel Anatomy &amp; Testing
+        </h3>
+      </div>
+      <div style="text-align: center; margin-bottom: 20px;">
+        <img src="assets/images/cashew-jumbo.svg" alt="Cashew Anatomy" style="max-height: 180px; margin: 0 auto;">
+      </div>
+      <div class="quote-summary-grid">
+        <div class="summary-item">
+          <span class="label">Kernel Texture:</span>
+          <span class="val">Firm, crispy, ivory-white, unbroken cotyledon seam</span>
+        </div>
+        <div class="summary-item">
+          <span class="label">Moisture Specification:</span>
+          <span class="val">3.0% – 5.0% (Loss-on-drying test at 105°C)</span>
+        </div>
+        <div class="summary-item">
+          <span class="label">Free Fatty Acids (FFA):</span>
+          <span class="val">&lt; 1.0% (Guarantees zero rancidity)</span>
+        </div>
+        <div class="summary-item">
+          <span class="label">Aflatoxin Limit:</span>
+          <span class="val">&lt; 4 ppb (Complies with strict EU/US safety limits)</span>
+        </div>
+      </div>
+      <div class="modal-action-bar">
+        <button class="btn btn-primary btn-quote-product modal-close-trigger" data-commodity="cashew" data-grade="w180">
+          Quote This Grade on Hero Form
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       MODAL: SAMPLE REQUEST
+       ========================================== -->
+  <div class="cosmos-modal-backdrop" id="sample-request-modal">
+    <div class="cosmos-modal-card">
+      <button class="modal-close-btn modal-close-trigger" aria-label="Close modal">&times;</button>
+      <div style="text-align: center; margin-bottom: 20px;">
+        <span class="rfq-tag">AIR COURIER DISPATCH</span>
+        <h3 style="font-family: var(--font-serif); font-size: 1.8rem; color: #FFFFFF; margin-top: 6px;">
+          Request 500g Laboratory Sample
+        </h3>
+        <p style="color: var(--text-muted); font-size: 0.88rem;">
+          Dispatched via DHL/FedEx Express from Singapore within 24 hours
+        </p>
+      </div>
+      <form id="sample-order-form" onsubmit="event.preventDefault(); alert('Sample Request Received! Our trade desk will contact you with tracking details.'); document.getElementById('sample-request-modal').classList.remove('open');">
+        <div class="form-group" style="margin-bottom: 14px;">
+          <label>Selected Commodity &amp; Grade</label>
+          <input type="text" class="form-control" value="W-180 Jumbo King Cashew + W-320 Sample Pack" readonly>
+        </div>
+        <div class="form-row-2" style="margin-bottom: 14px;">
+          <div class="form-group">
+            <label>Recipient Name</label>
+            <input type="text" class="form-control" placeholder="Contact Name" required>
+          </div>
+          <div class="form-group">
+            <label>Company / Factory Name</label>
+            <input type="text" class="form-control" placeholder="e.g. Roasters Inc" required>
+          </div>
+        </div>
+        <div class="form-group" style="margin-bottom: 14px;">
+          <label>Delivery Address with Postal Code</label>
+          <input type="text" class="form-control" placeholder="Full international street address" required>
+        </div>
+        <div class="form-row-2" style="margin-bottom: 20px;">
+          <div class="form-group">
+            <label>Work Email</label>
+            <input type="email" class="form-control" placeholder="corporate email" required>
+          </div>
+          <div class="form-group">
+            <label>Phone / DHL Courier Contact</label>
+            <input type="tel" class="form-control" placeholder="+..." required>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">
+          <span>Confirm &amp; Dispatch Sample Pack</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/cashew-animation.js"></script>
+  <script src="js/sliders.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

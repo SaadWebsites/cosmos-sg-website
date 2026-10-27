@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCE082"/>
+      <stop offset="45%" stop-color="#D4A359"/>
+      <stop offset="80%" stop-color="#B28236"/>
+      <stop offset="100%" stop-color="#8C611D"/>
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#144E3D"/>
+      <stop offset="50%" stop-color="#0E382B"/>
+      <stop offset="100%" stop-color="#072018"/>
+    </linearGradient>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4EBA87"/>
+      <stop offset="100%" stop-color="#1B6D4C"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Left Emblem Group -->
+  <g transform="translate(10, 10)">
+    <!-- Outer Shield / Circle with Gold Trim -->
+    <circle cx="50" cy="50" r="48" fill="url(#emeraldGrad)" stroke="url(#goldGrad)" stroke-width="2.5" filter="url(#shadow)"/>
+    <circle cx="50" cy="50" r="44" fill="none" stroke="#D4A359" stroke-width="0.75" stroke-dasharray="3,2" opacity="0.6"/>
+
+    <!-- Subtle Meridian Globe Lines -->
+    <ellipse cx="50" cy="50" rx="36" ry="16" fill="none" stroke="#D4A359" stroke-width="0.6" opacity="0.25"/>
+    <ellipse cx="50" cy="50" rx="16" ry="36" fill="none" stroke="#D4A359" stroke-width="0.6" opacity="0.25"/>
+    <line x1="14" y1="50" x2="86" y2="50" stroke="#D4A359" stroke-width="0.6" opacity="0.25"/>
+    <line x1="50" y1="14" x2="50" y2="86" stroke="#D4A359" stroke-width="0.6" opacity="0.25"/>
+
+    <!-- Laurel Leaves Orbit -->
+    <path d="M 24,68 C 20,54 24,36 38,24" fill="none" stroke="url(#leafGrad)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 76,68 C 80,54 76,36 62,24" fill="none" stroke="url(#leafGrad)" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Golden Cashew Nut Icon Centerpiece -->
+    <path d="M 45,30 C 58,28 69,38 67,52 C 65,65 52,72 41,70 C 33,68 28,62 31,54 C 34,46 44,48 48,51 C 52,54 56,53 57,48 C 58,43 54,38 48,37 C 44,36 41,38 39,40 C 37,35 40,31 45,30 Z" 
+          fill="url(#goldGrad)" filter="url(#shadow)"/>
+    
+    <!-- Cashew Inner highlight crease -->
+    <path d="M 42,42 C 49,43 54,49 53,55" fill="none" stroke="#FFF" stroke-width="1.2" opacity="0.45" stroke-linecap="round"/>
+
+    <!-- Singapore Star Motif & Sprout -->
+    <polygon points="50,18 52,23 57,23 53,26 55,31 50,28 45,31 47,26 43,23 48,23" fill="url(#goldGrad)"/>
+  </g>
+
+  <!-- Typography: COSMOS SG -->
+  <g transform="translate(125, 22)">
+    <!-- Primary Brand Wordmark -->
+    <text x="0" y="38" font-family="'Cinzel', 'Playfair Display', 'Times New Roman', serif" font-size="36" font-weight="800" letter-spacing="3.5" fill="#FFFFFF">
+      COSMOS <tspan fill="url(#goldGrad)">SG</tspan>
+    </text>
+
+    <!-- Subtitle: TRADING PTE LTD -->
+    <text x="2" y="60" font-family="'Montserrat', 'Inter', 'Segoe UI', sans-serif" font-size="12.5" font-weight="700" letter-spacing="5" fill="#D4A359">
+      TRADING PTE LTD
+    </text>
+
+    <!-- Singapore UEN Registration & Tagline -->
+    <line x1="2" y1="70" x2="350" y2="70" stroke="url(#goldGrad)" stroke-width="1" opacity="0.5"/>
+    <text x="2" y="84" font-family="'Inter', 'Segoe UI', sans-serif" font-size="10" font-weight="500" letter-spacing="1.5" fill="#9FB3A8">
+      GLOBAL CASHEW EXPERTS • SOURCED WITH INTEGRITY • SINGAPORE
+    </text>
+  </g>
+</svg>

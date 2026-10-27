@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" width="100%" height="100%">
+  <defs>
+    <radialGradient id="cocoaPodGrad" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#E5853B"/>
+      <stop offset="35%" stop-color="#C05621"/>
+      <stop offset="75%" stop-color="#7B341E"/>
+      <stop offset="100%" stop-color="#4A1D0D"/>
+    </radialGradient>
+    <radialGradient id="beanGrad" cx="40%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#694331"/>
+      <stop offset="50%" stop-color="#452719"/>
+      <stop offset="100%" stop-color="#24130A"/>
+    </radialGradient>
+    <filter id="cocoaShadow">
+      <feDropShadow dx="3" dy="8" stdDeviation="6" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <ellipse cx="200" cy="275" rx="140" ry="20" fill="#071912" opacity="0.4"/>
+
+  <!-- Cocoa Pod Body -->
+  <g filter="url(#cocoaShadow)">
+    <path d="M 80,140 
+             C 110,60 210,60 280,110 
+             C 320,140 330,170 300,200 
+             C 240,260 140,240 90,190 
+             C 75,175 70,155 80,140 Z" 
+          fill="url(#cocoaPodGrad)"/>
+
+    <!-- Pod Ridges / Grooves -->
+    <path d="M 82,142 C 140,115 220,120 295,198" fill="none" stroke="#4A1D0D" stroke-width="4" opacity="0.7"/>
+    <path d="M 98,120 C 160,95 240,105 285,155" fill="none" stroke="#371509" stroke-width="3" opacity="0.6"/>
+    <path d="M 105,175 C 165,170 235,210 265,225" fill="none" stroke="#371509" stroke-width="3" opacity="0.6"/>
+
+    <!-- Pod Stem -->
+    <path d="M 78,142 C 60,135 50,140 45,148 C 42,154 50,158 60,155 C 70,152 75,150 82,148" fill="#5C3D2E"/>
+  </g>
+
+  <!-- Fermented Sun-Dried Cocoa Beans (Around Pod) -->
+  <g filter="url(#cocoaShadow)">
+    <ellipse cx="260" cy="230" rx="34" ry="20" transform="rotate(-25 260 230)" fill="url(#beanGrad)" stroke="#694331" stroke-width="1.5"/>
+    <path d="M 235,222 Q 260,230 285,225" fill="none" stroke="#8A5B45" stroke-width="2" opacity="0.5"/>
+
+    <ellipse cx="190" cy="245" rx="32" ry="19" transform="rotate(20 190 245)" fill="url(#beanGrad)" stroke="#694331" stroke-width="1.5"/>
+    <path d="M 170,240 Q 190,248 212,242" fill="none" stroke="#8A5B45" stroke-width="2" opacity="0.5"/>
+
+    <ellipse cx="305" cy="210" rx="28" ry="17" transform="rotate(35 305 210)" fill="url(#beanGrad)"/>
+  </g>
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" width="100%" height="100%">
+  <defs>
+    <radialGradient id="rawShellGrad" cx="40%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#9C8B7B"/>
+      <stop offset="25%" stop-color="#736253"/>
+      <stop offset="60%" stop-color="#4D3F33"/>
+      <stop offset="90%" stop-color="#2D2219"/>
+      <stop offset="100%" stop-color="#19130D"/>
+    </radialGradient>
+    <linearGradient id="appleStemGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E54B24"/>
+      <stop offset="60%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+    <filter id="rawShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="10" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Ground Shadow -->
+  <ellipse cx="210" cy="280" rx="135" ry="22" fill="#05100B" opacity="0.5"/>
+
+  <!-- Cashew Apple Attachment Base (Partial) -->
+  <path d="M 170,25 C 200,20 230,22 250,35 C 255,42 245,55 220,58 C 190,60 165,50 160,38 Z" fill="url(#appleStemGrad)" opacity="0.85"/>
+
+  <!-- In-Shell Nut Body (Kidney Shaped Shell) -->
+  <path d="M 195,50 
+           C 270,55 335,100 345,160 
+           C 352,225 310,270 235,270 
+           C 170,270 130,230 138,185 
+           C 145,150 190,165 210,172 
+           C 230,180 250,170 255,150 
+           C 260,128 240,105 205,98 
+           C 175,90 155,108 140,118 
+           C 125,95 145,60 195,50 Z" 
+        fill="url(#rawShellGrad)" filter="url(#rawShadow)"/>
+
+  <!-- Hard Shell Ridges and Rugged Texture -->
+  <path d="M 190,65 C 250,75 310,120 320,170" fill="none" stroke="#251A12" stroke-width="3" opacity="0.7"/>
+  <path d="M 180,85 C 235,95 290,140 295,190" fill="none" stroke="#544437" stroke-width="2.5" opacity="0.6"/>
+  <path d="M 160,120 C 185,130 220,135 235,120" fill="none" stroke="#2B1E16" stroke-width="2.5" opacity="0.8"/>
+  <path d="M 210,210 C 240,240 280,245 300,210" fill="none" stroke="#665345" stroke-width="2" opacity="0.5"/>
+
+  <!-- Natural Pitted Shell Specs -->
+  <circle cx="260" cy="120" r="1.5" fill="#1A120B"/>
+  <circle cx="280" cy="160" r="2" fill="#1A120B"/>
+  <circle cx="230" cy="240" r="2.2" fill="#1A120B"/>
+  <circle cx="310" cy="180" r="1.8" fill="#1A120B"/>
+  <circle cx="180" cy="220" r="2" fill="#1A120B"/>
+
+  <!-- Badge Overlay: Origin West Africa (Guinea / Côte d'Ivoire) -->
+  <g transform="translate(40, 200)">
+    <rect x="0" y="0" width="130" height="40" rx="8" fill="#0B251E" stroke="#D4A359" stroke-width="1.5" opacity="0.95"/>
+    <text x="65" y="16" fill="#D4A359" font-family="'Inter', sans-serif" font-size="9" font-weight="700" text-anchor="middle" letter-spacing="1">RAW CASHEW NUTS</text>
+    <text x="65" y="30" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="10" font-weight="600" text-anchor="middle">KOR 48–52+ lbs</text>
+  </g>
+</svg>

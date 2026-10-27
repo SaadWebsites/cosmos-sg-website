@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cardboardFront" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D6A56E"/>
+      <stop offset="100%" stop-color="#B2824D"/>
+    </linearGradient>
+    <linearGradient id="cardboardSide" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B2824D"/>
+      <stop offset="100%" stop-color="#8F6335"/>
+    </linearGradient>
+    <linearGradient id="cardboardTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5BB88"/>
+      <stop offset="100%" stop-color="#D6A56E"/>
+    </linearGradient>
+    <filter id="boxShadow">
+      <feDropShadow dx="6" dy="16" stdDeviation="12" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <ellipse cx="200" cy="270" rx="150" ry="25" fill="#071912" opacity="0.5"/>
+
+  <!-- 3D Isometric Carton -->
+  <g filter="url(#boxShadow)">
+    <!-- Top Face -->
+    <polygon points="120,80 230,40 330,80 220,120" fill="url(#cardboardTop)"/>
+    <!-- Tape Across Top -->
+    <polygon points="175,60 275,60 275,100 175,100" fill="#9C6B38" opacity="0.6"/>
+
+    <!-- Left Face -->
+    <polygon points="120,80 220,120 220,250 120,205" fill="url(#cardboardFront)"/>
+
+    <!-- Right Face -->
+    <polygon points="220,120 330,80 330,205 220,250" fill="url(#cardboardSide)"/>
+
+    <!-- Front Label on Left Face: COSMOS SG 25KG VACUUM CARTON -->
+    <g transform="matrix(0.9 0.4 -0.05 0.9 135 110)">
+      <rect x="0" y="0" width="85" height="55" fill="#0E382B" rx="3" stroke="#D4A359" stroke-width="1"/>
+      <text x="42" y="14" fill="#D4A359" font-family="'Cinzel', serif" font-size="7" font-weight="700" text-anchor="middle">COSMOS SG</text>
+      <text x="42" y="24" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="5.5" font-weight="600" text-anchor="middle">CASHEW KERNELS</text>
+      <line x1="8" y1="28" x2="77" y2="28" stroke="#D4A359" stroke-width="0.5"/>
+      <text x="42" y="38" fill="#FCE082" font-family="'Inter', sans-serif" font-size="8" font-weight="800" text-anchor="middle">25.0 KG NET</text>
+      <text x="42" y="47" fill="#9FB3A8" font-family="'Inter', sans-serif" font-size="4.5" text-anchor="middle">VACUUM POUCH / N2</text>
+    </g>
+
+    <!-- Side Shipping Marks on Right Face -->
+    <g transform="matrix(0.9 -0.4 0 0.9 235 155)">
+      <text x="0" y="0" fill="#241408" font-family="'Courier New', monospace" font-size="6.5" font-weight="bold">DEST: ROTTERDAM / HAMBURG</text>
+      <text x="0" y="9" fill="#241408" font-family="'Courier New', monospace" font-size="6.5" font-weight="bold">ORIGIN: GUINEA / VIETNAM</text>
+      <text x="0" y="18" fill="#241408" font-family="'Courier New', monospace" font-size="6.5" font-weight="bold">GRADE: W320 PREMIUM</text>
+      <text x="0" y="27" fill="#241408" font-family="'Courier New', monospace" font-size="6.5" font-weight="bold">LOT: CSG-2026-4481</text>
+      <rect x="0" y="33" width="70" height="12" fill="#241408" opacity="0.85"/>
+      <line x1="5" y1="35" x2="5" y2="43" stroke="#FFF" stroke-width="1"/>
+      <line x1="10" y1="35" x2="10" y2="43" stroke="#FFF" stroke-width="2"/>
+      <line x1="16" y1="35" x2="16" y2="43" stroke="#FFF" stroke-width="1"/>
+      <line x1="22" y1="35" x2="22" y2="43" stroke="#FFF" stroke-width="2.5"/>
+      <line x1="30" y1="35" x2="30" y2="43" stroke="#FFF" stroke-width="1"/>
+      <line x1="38" y1="35" x2="38" y2="43" stroke="#FFF" stroke-width="2"/>
+      <line x1="45" y1="35" x2="45" y2="43" stroke="#FFF" stroke-width="1"/>
+      <line x1="55" y1="35" x2="55" y2="43" stroke="#FFF" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
